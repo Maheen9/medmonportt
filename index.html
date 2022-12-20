@@ -513,36 +513,36 @@
                         <?php include 'assets/bat/rd-mailform.php';?>
                         <div class="container">
                             <div class="contact_form">
-                                
-                                <form class="email_form" autocomplete="off" method="post" action="index.html">
+                                <form class="rd-form rd-form-variant-2 rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
                                     <div class="row row-14 gutters-14">
-                                        <div class="col-md-4">
-                                          <div class="form-wrap">
-                                            <input class="form-input" id="contact-your-name-2" type="text" name="name" data-constraints="@Required">
-                                            <label class="form-label" for="contact-your-name-2">Your Name</label>
-                                          </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                          <div class="form-wrap">
-                                            <input class="form-input" id="contact-email-2" type="email" name="email" data-constraints="@Email @Required">
-                                            <label class="form-label" for="contact-email-2">E-mail</label>
-                                          </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                          <div class="form-wrap">
-                                            <input class="form-input" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric">
-                                            <label class="form-label" for="contact-phone-2">Phone</label>
-                                          </div>
-                                        </div>
-                                        <div class="col-12">
-                                          <div class="form-wrap message">
-                                            <label class="form-label" for="contact-message-2">Message</label>
-                                            <textarea class="form-input textarea-lg" id="contact-message-2" name="message" data-constraints="@Required" style="background: none; border: none;"></textarea>
-                                          </div>
+                                      <div class="col-md-4">
+                                        <div class="form-wrap">
+                                          <input class="form-input" id="contact-your-name-2" type="text" name="name" data-constraints="@Required">
+                                          <label class="form-label" for="contact-your-name-2">Your Name</label>
                                         </div>
                                       </div>
-                                      <button class="button button-primary button-pipaluk contact_btn" type="submit">Send Message</button>
-                                    </form>
+                                      <div class="col-md-4">
+                                        <div class="form-wrap">
+                                          <input class="form-input" id="contact-email-2" type="email" name="email" data-constraints="@Email @Required">
+                                          <label class="form-label" for="contact-email-2">E-mail</label>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <div class="form-wrap">
+                                          <input class="form-input" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric">
+                                          <label class="form-label" for="contact-phone-2">Phone</label>
+                                        </div>
+                                      </div>
+                                      <div class="col-12">
+                                        <div class="form-wrap">
+                                          <label class="form-label" for="contact-message-2">Message</label>
+                                          <textarea class="form-input textarea-lg" id="contact-message-2" name="message" data-constraints="@Required"></textarea>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button class="button button-primary button-pipaluk" type="submit">Send Message</button>
+                                  </form>
+                        
                             </div>
                         </div>
                     </div>
@@ -606,8 +606,8 @@
     </footer>
     <!--------------------Script Section------------------------>
     <script src="./assets/scripts/mainscript.js"></script>
-    <script src="./assets/scripts/core.min.js"></script>
-    <script src="./assets/scripts/script.js"></script>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
 
     <!--------------------ScrollReveal Link------------------------>
     <script src="https://unpkg.com/scrollreveal"></script>

@@ -515,14 +515,34 @@
                             <div class="contact_form">
                                 
                                 <form class="email_form" autocomplete="off" method="post" action="index.html">
-                                    <div class="name">
-                                        <input  class="first_name" id="first_name" type="text" name="first_name" required placeholder="first name">
-                                        <input  class="last_name" id="last_name" type="text" name="last_name" required placeholder="last name">
-                                    </div>
-                                    <input type="email" required class="email" placeholder="email" name="email" id="email">
-                                    <textarea class="message" placeholder="Your Message" required name="message" id="message"></textarea>
-                                    <button type="submit" class="btn contact_btn" value="send" name="submit">Contact Me</button>
-                                </form>
+                                    <div class="row row-14 gutters-14">
+                                        <div class="col-md-4">
+                                          <div class="form-wrap">
+                                            <input class="form-input" id="contact-your-name-2" type="text" name="name" data-constraints="@Required">
+                                            <label class="form-label" for="contact-your-name-2">Your Name</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="form-wrap">
+                                            <input class="form-input" id="contact-email-2" type="email" name="email" data-constraints="@Email @Required">
+                                            <label class="form-label" for="contact-email-2">E-mail</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="form-wrap">
+                                            <input class="form-input" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric">
+                                            <label class="form-label" for="contact-phone-2">Phone</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-12">
+                                          <div class="form-wrap message">
+                                            <label class="form-label" for="contact-message-2">Message</label>
+                                            <textarea class="form-input textarea-lg" id="contact-message-2" name="message" data-constraints="@Required" style="background: none; border: none;"></textarea>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <button class="button button-primary button-pipaluk contact_btn" type="submit">Send Message</button>
+                                    </form>
                             </div>
                         </div>
                     </div>
